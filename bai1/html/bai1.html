@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bai1/css/bootstrap.min.css">
+    <script src="/bai1/js/bootstrap.min.js"></script>
+    <script src="/bai1/js/jquery-3.7.1.min.js"></script>
+</head>
+<style>
+    .container-fluid {
+        background: linear-gradient(to bottom, rgb(104, 182, 239), rgb(3, 126, 214))
+    }
+    
+    .nav-link {
+        color: white;
+        font-weight: bold;
+    }
+    
+    .sky {
+        color: aliceblue;
+        background-color: rgba(0, 0, 255, 0.074);
+        text-shadow: 5px 0px 5px blue;
+    }
+    
+    #hr {
+        border: none;
+        border-top: 4px dotted white;
+        width: 100%;
+    }
+    
+    h2,
+    p,
+    td {
+        color: white;
+    }
+    
+    button {
+        border: none;
+        border: 2px dashed blue;
+        margin-left: 4px;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <nav class="navbar navbar-expand col-10">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col-2 text-end">
+                <h1 class="sky">Sky World</h1>
+            </div>
+        </header>
+        <hr id="hr">
+        <div class="content row">
+            <div class="left col-6">
+                <h2>Registration information</h2>
+                <p>
+                    Start your travel planning now with our on-line tour regstration form. <br> Just tell us a little about yourself and your group and one of our travel <br> experts will contact you to create the perfect custom built for your group's
+                    needs .
+                </p>
+                <form action="" class="form">
+                    <div class="row">
+                        <div class="col">
+                            <p>Title</p>
+                        </div>
+                        <div class="col">
+                            <select name="select" id="sl" style="border-radius: 3px;">
+                                <option value="Mr.">Mr.</option>
+                                <option value="Mrs.">Mrs.</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>FullName</p>
+                        </div>
+                        <div class="col">
+                            <input type="text" placeholder="FullName" style="border-radius: 3px;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <p>Mailing Address</p>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" placeholder="Mailing Address" style="border-radius: 3px;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <p>City</p>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" placeholder="City" style="border-radius: 3px;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <p>Country</p>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" placeholder="Country" style="border-radius: 3px;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <p>Specific questions or requests about your tour</p>
+                        </div>
+                        <div class="col-6">
+                            <textarea id="textarea" placeholder="Specific questions or requests about your tour" style="border-radius: 3px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 offset-6 text-end">
+                            <button>
+                                Submit
+                            </button>
+                            <button>
+                                Reset
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="right col-6">
+                <img src="/bai1/img/sky.png" style="width: 90%;" alt="sky">
+                <h1 id="h1bot">You've arrived.</h1>
+                <h4>Journeys as great as the destinations.</h4>
+            </div>
+        </div>
+        <hr id="hr">
+        <footer>
+            <div class="row justify-content-center">
+                <p>&copy;2016 Sky World Tours. All rights reserved.</p>
+            </div>
+            <div class="row justify-content-center">
+                <p>Contact information: Student Name | StudentID | Testing Date</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
